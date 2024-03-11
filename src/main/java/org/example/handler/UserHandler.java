@@ -16,6 +16,35 @@ import java.sql.*;
 public class UserHandler {
 
     @POST
+    @Path("/login")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response userLogin(@Context MuRequest request) throws IOException {
+        JSONObject json = new JSONObject(request.readBodyAsString());
+        try (Connection connection = DatabaseFactory.getInstance().getConnection();
+             PreparedStatement ps = connection.prepareStatement("SELECT * FROM user WHERE email = ? AND password = ?");) {
+             ps.setString(1, json.getString("email"));
+             ps.setString(2, json.getString("password"));
+             try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return Response.ok()
+                            .entity("Login successfully")
+                            .build();
+                } else {
+                    return Response.status(Response.Status.UNAUTHORIZED)
+                            .entity("Email or password is incorrect")
+                            .build();
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity("Service error")
+                    .build();
+        }
+    }
+
+    @POST
     @Path("/signup")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="210ba8f9-8875-4d5c-b3d0-3625e7bc4ce6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="210ba8f9-8875-4d5c-b3d0-3625e7bc4ce6" name="Changes" comment="Update user sign up API">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mysql-connector-j-8.3.0.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/db/DatabaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/DatabaseFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/handler/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/handler/UserHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +98,33 @@
       <option name="presentableId" value="Default" />
       <updated>1709239943824</updated>
     </task>
+    <task id="LOCAL-00001" summary="set up muserver, create DatabaseFactory and connect to database. Create signup api">
+      <created>1709521183954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709521183954</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update user sign up API">
+      <created>1710109160104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710109160104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update user sign up API">
+      <created>1710109333512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710109333512</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="set up muserver, create DatabaseFactory and connect to database. Create signup api" />
+    <MESSAGE value="Update user sign up API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update user sign up API" />
   </component>
 </project>
