@@ -7,7 +7,6 @@ import org.json.JSONObject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.sql.*;
@@ -23,8 +22,8 @@ public class UserHandler {
         JSONObject json = new JSONObject(request.readBodyAsString());
         try (Connection connection = DatabaseFactory.getInstance().getConnection();
              PreparedStatement ps = connection.prepareStatement("SELECT * FROM user WHERE email = ? AND password = ?");) {
-             ps.setString(1, json.getString("email"));
-             ps.setString(2, json.getString("password"));
+             ps.setString(1, json.getString("Email"));
+             ps.setString(2, json.getString("Password"));
              try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
                     return Response.ok()
@@ -51,17 +50,19 @@ public class UserHandler {
     public Response createUser(@Context MuRequest request) throws IOException {
         JSONObject json = new JSONObject(request.readBodyAsString());
         try (Connection connection = DatabaseFactory.getInstance().getConnection();
-             PreparedStatement ps = connection.prepareStatement("SELECT COUNT(username) FROM user WHERE username = ?");
-             PreparedStatement ps1 = connection.prepareStatement("INSERT INTO user (id, username, password) VALUE (uuid(),?,?)")) {
-             ps.setString(1, json.getString("userName"));
+             PreparedStatement ps = connection.prepareStatement("SELECT COUNT(email) FROM user WHERE email = ?");
+             PreparedStatement ps1 = connection.prepareStatement("INSERT INTO user (id, firstName, lastName, email, password) VALUE (uuid(),?,?,?,?)")) {
+             ps.setString(1, json.getString("Email"));
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next() && rs.getInt(1) > 0) {
                     return Response.status(Response.Status.BAD_REQUEST)
-                            .entity("User name has already been used")
+                            .entity("User email has already been used")
                             .build();
                 }
-                ps1.setString(1, json.getString("userName"));
-                ps1.setString(2, json.getString("password"));
+                ps1.setString(1, json.getString("First Name"));
+                ps1.setString(2, json.getString("Last Name"));
+                ps1.setString(3, json.getString("Email"));
+                ps1.setString(4, json.getString("Password"));
                 ps1.execute();
             }
             return Response.ok()
