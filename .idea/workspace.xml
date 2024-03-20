@@ -5,10 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="210ba8f9-8875-4d5c-b3d0-3625e7bc4ce6" name="Changes" comment="update sign up api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/handler/ProductHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/allium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/aloe_vera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/azalea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/bluebells.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/camellias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/carnation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/columbine.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/creeping-phlox.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/daffodil.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/diascia.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/flowering_quince .jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/forget_me_nots.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/forsythia.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/foxglove.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/glory_of_the_snow.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/grape_hyacinth.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/iris.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/jasmine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/lavender.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/lenten_rose.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/lilac.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/lily_of_the_valley.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/lupine.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/pansy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/peachy_rose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/peonies.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/peppermint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/prairie_smoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/snapdragon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/snowdrops.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/sunflower.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/sweet _alyssum.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/tulip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/tweedia_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/imgs/wallflowers.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/handler/ProductHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/handler/ProductHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,15 +90,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/meilingjiang/Desktop/garden_city_server/src/main/java/org/example/handler",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "/Users/meilingjiang/Desktop/garden_city_server/src/resources",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.tools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/handler" />
       <recent name="$PROJECT_DIR$/resource" />
     </key>
