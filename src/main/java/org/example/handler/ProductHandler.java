@@ -1,6 +1,5 @@
 package org.example.handler;
 
-import io.muserver.UploadedFile;
 import org.example.db.DatabaseFactory;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,7 +11,8 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.UUID;
+
+
 
 @Path("product")
 public class ProductHandler {
@@ -59,34 +59,7 @@ public class ProductHandler {
                     .build();
         }
     }
-    @POST
-    @Path("/add")
-    @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response addProduct(
-            @FormParam("name") String name,
-            @FormParam("price") String price,
-            @FormParam("image") UploadedFile image) {
-        try {
-            UUID uuid = UUID.randomUUID();
-            String uuidString = uuid.toString();
-            try (Connection connection = DatabaseFactory.getInstance().getConnection();
-                 PreparedStatement ps = connection.prepareStatement("INSERT INTO products(id, name, price, img) values (?, ?, ?, ?);");) {
-                ps.setString(1, uuidString);
-                ps.setString(2, name);
-                ps.setDouble(3, Double.parseDouble(price));
-                ps.setBytes(4, image.asBytes());
-                ps.execute();
-                return Response.status(Response.Status.OK)
-                        .entity("Successfully added product with id: " + uuidString)
-                        .build();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity("Service error")
-                    .build();
-        }
-    }
+
 
 }
+
