@@ -49,13 +49,18 @@ public class ProductHandler {
                  o.put("image", rs.getString("image"));
                  result.put(o);
              }
-            return Response.status(Response.Status.OK)
+            Response s = Response.status(Response.Status.OK)
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "GET")
                     .entity(result.toString())
                     .build();
+            System.out.println(s.getHeaders());
+            return s;
         } catch (Exception e) {
             e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                     .entity("Service error")
+                    .header("Access-Control-Allow-Origin", "*")
                     .build();
         }
     }

@@ -22,20 +22,21 @@ public class App
 
     public static void main( String[] args ) {
         try {
-            MuServer server = httpServer()
+            MuServer server = MuServerBuilder.muServer()
                     .withHttpPort(8080)
                     .addHandler(context("garden_city")
                             .addHandler(RestHandlerBuilder.restHandler(new UserHandler()))
                             .addHandler(RestHandlerBuilder.restHandler(new ProductHandler())))
                     .start();
             System.out.println("Service is running on..." + server.uri());
-//            insertProducts();
+            //insertProducts();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
     public static void insertProducts() {
         Path directory = Paths.get(App.class.getClassLoader().getResource("imgs").getFile());
+        System.out.println(directory);
         if (!Files.exists(directory) || !Files.isDirectory(directory)) {
             System.out.println("Directory does not exist or is not a directory.");
             return;
